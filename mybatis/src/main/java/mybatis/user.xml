@@ -13,7 +13,7 @@
         根据id查询得到一个user对象
      -->
     <select id="getUser" parameterType="int" 
-        resultType="mybatis/User">
+        resultType="java.util.Map">
         select * from user where id=#{id}
     </select>
 </mapper>
